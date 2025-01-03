@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(121, 101, 203) url(images/black.png) center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1{
+    color: orangered;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 3.5s;
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,
+    0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
+
+.navbar .reservation{
+    padding: 8px;
+    background-color: orangered;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+h1 span {
+    background-color: greenyellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+h1, h2 {
+    text-align: bottom;
+    margin-bottom: 10px;
+}
+
+.contact-form, .address, .social-media {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+ul li a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Vedant Restaurant</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a class="reservation" href="#">RESERVATION</a></li>
+            </ul>
+        </div>
+    </div>
+    <body>
+        <div class="container">
+            <section class="contact-form">
+                <p><i>We'd love to hear from you! Whether you have a question, comment, or just want to say hello, please don't hesitate to reach out.</i></p>
+                <form>
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                    <label for="phone"><b>Phone:</b></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+                    <label for="message"><b>Message:</b></label>
+                    <textarea id="message" name="message" placeholder="Write your message"></textarea><br><br>
+                    <input type="submit" value="Send">
+                </form>
+            </section>
+            <section class="address">
+                <h2>Our Address</h2>
+                <ul>
+                    <li><b>Hotel Booking</b></li>
+                    <li>123 Main St</li>
+                    <li>Anytown, India 12345</li>
+                    <li>Phone: 555-555-5555</li>
+                </ul>
+            </section>
+            <section class="social-media">
+                <p><b>Follow us on social media:</b></p>
+                <ul>
+                    <li><a href="https://www.facebook.com/hotelbooking">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/hotelbooking">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/hotelbooking">Instagram</a></li>
+                </ul>
+            </section>
+            <footer>
+                <h2>Thank You</h2>
+            </footer>
+        </div>
+    </body>
+</html>
